@@ -23,11 +23,13 @@ const Contador = ({stock}) => {
   return (
     <div >
         <div className='contenedor_contador'>
-                <button onClick={agregar}>+</button>
-                <div>
-                        <p>{cantidad}</p>
+                <div className='contenedor_contador_caja'>
+                        <button onClick={agregar}>+</button>
+                        <div className='cantidad'>
+                                <p>{cantidad}</p>
+                        </div>
+                        <button onClick={quitar}>-</button>
                 </div>
-                <button onClick={quitar}>-</button>
         </div>
     </div>
   )

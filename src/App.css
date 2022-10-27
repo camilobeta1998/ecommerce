@@ -18,6 +18,7 @@ body{
         justify-content: space-between;
         padding:  35px;
         align-items: center;
+        box-shadow: 2px 2px 10px gray;
 }
 
 ul{
@@ -28,10 +29,16 @@ ul{
         justify-content: space-between;
 }
 
-Main{
+main{
         height: 100vh;
         width: 100%;
-        border: solid 2px black;
+        
+}
+
+main .main__contador{
+        position: relative;
+        top: 15px;
+        left: 15px;
 }
 
 .footer{
@@ -44,20 +51,42 @@ Main{
         color: white;
 }
 
-.carrito_de_compras{
-        width: 70px;
-        display: flex;
-        justify-content: space-between;
-}
 
 button{
         padding: 5px 10px;
+        border-style:double;
+        background-color: #D3D3D3 ;
+}
+
+button:hover{
+        background-color: white;
 }
 
 /*Aqui estaran los estilo del contador */
 
 .contenedor_contador{
+        
         display: flex;
-        width: 100px;
+        justify-content: center;
+        align-items: center;
+        background-color: #E9E9E9;
+        width: 150px;
+        height: 80px;
         padding: 15px;
 }
+
+.contenedor_contador .contenedor_contador_caja{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+}
+
+.contenedor_contador .contenedor_contador_caja .cantidad{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+/*Fin de estilos del contador */
