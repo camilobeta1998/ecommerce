@@ -90,3 +90,27 @@ button:hover{
 }
 
 /*Fin de estilos del contador */
+
+/*Inicio estilos de las tarjetas*/
+
+.contenedor__tarjetas{
+        display: flex;
+}
+
+.tarjetas{
+        width: 250px;
+        height: 300px;
+        margin-left: 15px;
+        background-color:  #b3b3b3 ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        border-radius: 8px;
+        text-align: center;
+}
+
+.tarjetas img{
+        border-radius: 8px;
+}

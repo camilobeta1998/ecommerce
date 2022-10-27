@@ -7,7 +7,7 @@ const Main = () => {
   return (
     <main>
     <div className='main__contador'>
-    <ItemListContainer bienvenida="Bienvenidos a todos por medio de un prop" />
+    <ItemListContainer bienvenida="Bienvenidos a todos por medio de un prop"/>
     <Contador stock={5}/>
     </div>
     </main>
