@@ -110,6 +110,9 @@ button:hover{
         border-radius: 8px;
         text-align: center;
 }
+.tarjetas:hover{
+        background-color: gray;
+}
 
 .tarjetas img{
         border-radius: 8px;
