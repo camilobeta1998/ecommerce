@@ -71,9 +71,17 @@ button:hover{
         align-items: center;
         background-color: #E9E9E9;
         width: 150px;
-        height: 80px;
+        height: 110px;
         padding: 15px;
 }
+
+.contenedor_contador .contenedor__caja__padre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
 
 .contenedor_contador .contenedor_contador_caja{
         display: flex;
@@ -89,12 +97,26 @@ button:hover{
         align-items: center;
 }
 
+.contenedor_contador .contenedor__boton__reiniciar{
+        width: 150px;
+        display: flex;
+        justify-content: center;
+}
+
+.contenedor_contador div .boton__reiniciar{
+        width: 135px;
+}
+
+.contenedor__caja__padre .contenedor__boton__agregar .boton__agregar{
+        width: 135px;
+}
 /*Fin de estilos del contador */
 
 /*Inicio estilos de las tarjetas*/
 
 .contenedor__tarjetas{
         display: flex;
+        flex-wrap: wrap;
 }
 
 .tarjetas{
@@ -109,6 +131,7 @@ button:hover{
         color: white;
         border-radius: 8px;
         text-align: center;
+        
 }
 .tarjetas:hover{
         background-color: gray;
@@ -117,3 +140,4 @@ button:hover{
 .tarjetas img{
         border-radius: 8px;
 }
+

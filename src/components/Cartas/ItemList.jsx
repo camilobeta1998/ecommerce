@@ -1,4 +1,5 @@
 import React from 'react'
+import { productos } from '../../mock/productos'
 import List from './List'
 
 const ItemList = ({products}) => {
@@ -7,7 +8,7 @@ const ItemList = ({products}) => {
         {products.map((product)=>{
                 return (
                         <div>
-                                <List prop={product}/>
+                                <List prop={product} key={productos.id}/>
                         </div>
                 )
         })}
