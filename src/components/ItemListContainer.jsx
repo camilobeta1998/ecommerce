@@ -8,7 +8,7 @@ let [products , setProducts] = useState([]);
         useEffect(()=>{
                 let promesa = new Promise((resolve, reject)=>{
                         setTimeout(() => {
-                               resolve(productos) 
+                               resolve(productos)
                         }, 2000);
                 })
 

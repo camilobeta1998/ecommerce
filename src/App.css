@@ -29,6 +29,12 @@ ul{
         justify-content: space-between;
 }
 
+.carrito_de_compras{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
 main{
         height: 100vh;
         width: 100%;
@@ -123,7 +129,7 @@ button:hover{
         width: 250px;
         height: 300px;
         margin-left: 15px;
-        background-color:  #b3b3b3 ;
+        background-color:  #8c8c8c ;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -134,10 +140,17 @@ button:hover{
         
 }
 .tarjetas:hover{
-        background-color: gray;
+        background-color: #666666;
 }
 
 .tarjetas img{
         border-radius: 8px;
+        width: 205px;
 }
 
+.descuento {
+        background-color: rgb(219, 219, 219);
+        border-radius: 2px;
+        color: black;
+        width: 150px;
+}
