@@ -14,8 +14,8 @@ let [products , setProducts] = useState([]);
 
                 promesa.then((response)=>{
                         setProducts(response);
-                }).catch((response)=>{
-                        console.log('error');
+                }).catch((error)=>{
+                        console.log(error);
                 })
         }, [])
   return (
