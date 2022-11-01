@@ -13,8 +13,9 @@ const Main = () => {
     <main>
     <div className='main__contador'>
     <Routes>
-            <Route path='/' element={<ItemListContainer bienvenida="Bienvenidos a todos por medio de un prop"/>}/>
-            <Route path='/detail' element={<ItemDetailContainer/> } />
+            <Route path='/' element={<ItemListContainer />}/>
+            <Route path='/detail/:idProd' element={<ItemDetailContainer/> } />
+            <Route path='/category/:categoryName' element={<ItemListContainer/>}/>
             <Route path='/cart' element={<Cart/>}/>
     </Routes>
 

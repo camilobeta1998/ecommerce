@@ -1,12 +1,12 @@
 import React from 'react'
 import Contador from '../../Contador/Contador'
 
-
 const ItemDetail = ({product}) => { 
               //Creare una funcion onAdd que llegara a prop al componente contador
          let onAdd =(cantidad) =>{
                 console.log('se agrego al carrito' , cantidad, ' ✅');
         }
+
   return (
     <div key={product.id}> 
     <div>

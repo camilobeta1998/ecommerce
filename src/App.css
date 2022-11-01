@@ -21,18 +21,33 @@ body{
         box-shadow: 2px 2px 10px gray;
 }
 
+/*Aqui ira la clase active de los Navlinks del navbar*/
+.active{
+        border: solid 6px gray;
+}
+
+.logo__header{
+        text-decoration: none;
+}
+
 ul{
         list-style: none;
         display: flex;
-        width: 190px;
+        width: 350px;
         font-size: 20px;
         justify-content: space-between;
+}
+
+ul a{
+        margin-left: 15px;
+        text-decoration: none;
 }
 
 .carrito_de_compras{
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
 }
 
 main{

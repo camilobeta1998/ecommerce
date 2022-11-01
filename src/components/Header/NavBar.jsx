@@ -1,15 +1,16 @@
 import React from 'react'
 import CardWidget from './CardWidget'
+import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = ({isInHeader}) => {
         if (isInHeader){
                 return (
                         <nav className='navbar'>
-                        <a href="/">Tienda de Ropa</a>
+                        <Link to="/" className='logo__header'>Tienda de Ropa</Link>
                                 <ul>
-                                        <li><a href="/category/maletines">Maletines</a></li>
-                                        <li><a href="/category/accesorios">Accesorios</a></li>
-                                        <li><a href="/category/relojes">Relojes</a></li>
+                                        <li><NavLink to="/category/Maletines">Maletines</NavLink></li>
+                                        <li><NavLink to="/category/Accesorios">Accesorios</NavLink></li>
+                                        <li><NavLink to="/category/Relojes">Relojes</NavLink></li>
                                 </ul>
                                 <a href="/cart">
                                         <CardWidget/>
