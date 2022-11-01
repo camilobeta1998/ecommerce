@@ -22,6 +22,7 @@ const ItemDetailContainer = () => {
                         console.log(error)
                 })
         } , [])
+        console.log(product);
   return (
     <div>
         <ItemDetail product={product}/>

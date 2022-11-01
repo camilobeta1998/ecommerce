@@ -158,23 +158,3 @@ button:hover{
 
 /*Inicio estilos de la tarjeta, cuando se muestran los productos*/
 
-.contenedor__item__detail .contenedor__item__detail__tarjeta{
-        background-color: #8c8c8c;
-        width: 700px;
-        display: flex;
-        height: 180px;
-        align-items: center;
-        justify-content: space-around;
-        margin-left: 15px;
-        margin-top: 15px;
-}
-
-.imagen__item__detail{
-        width: 160px;
-        height: 160px;
-}
-
-.contenedor__item__detail__texto{
-        width:500px;
-       
-}
