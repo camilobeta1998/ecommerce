@@ -8,7 +8,7 @@ const List = (product) => {
         <article>
                 <h2>{product.prop.title}</h2>
                 <h4 className='descuento'>%{product.prop.descuento} descuento</h4>
-                <h3>Precio : {product.prop.price} $</h3>
+                <h3 className='precio'>$ {product.prop.price} </h3>
         </article>
         <Link to={`/detail/${product.prop.id}`}>Ver mas</Link>
     </div>
