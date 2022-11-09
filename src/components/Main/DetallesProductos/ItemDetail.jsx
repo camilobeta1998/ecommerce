@@ -8,15 +8,20 @@ const ItemDetail = ({product}) => {
         }
 
   return (
-    <div key={product.id}> 
-    <div>
-        <img src={product.img} alt={product.title} width='150px'/>
+    <div className='contenedor__detail__tarjetas' key={product.id}> 
+    
         <div>
+                <img src={product.img} alt={product.title} />
+        </div>
+        <div className='contenedor__detail__tarjetas__informacion'>
                 <h2>{product.title}</h2>
-                <h2>Precio {product.price} $</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium eligendi, id unde vel 
+                iusto esse sed temporibus inventore blanditiis veniam, quam, laboriosam eaque deserunt recusandae dolorum minima libero ipsum quasi.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, unde possimus repellat ut 
+                dignissimos pariatur inventore hic, deleniti excepturi corporis explicabo accusamus molestias et aliquam iure in doloremque laboriosam minus!</p>
+                <h2 className='contenedor__detail__tarjetas__precio'>Precio {product.price} $</h2>
                  <Contador stock={4} onAdd={onAdd}/>
         </div>
-    </div>
     </div>
   )
 }

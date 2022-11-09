@@ -186,7 +186,44 @@ button:hover{
         color: white;
         padding: 2px 80px;
         border-radius: 5px;
+        
 }
 
 /*Inicio estilos de la tarjeta, cuando se muestran los productos*/
 
+/*Inicio estilos detail*/
+
+.contenedor__detail__tarjetas{
+        background-color: rgb(198, 197, 197);
+        width: 98%;
+        height: 70vh;
+        display: flex;
+}
+
+.contenedor__detail__tarjetas img{
+        width: 450px;
+        height: 430px;
+        margin-left: 20px ;
+        margin-top: 20px;
+}
+
+.contenedor__detail__tarjetas__informacion{
+        width: 870px;
+        height: 430px;
+        margin-left: 20px;
+        margin-top: 20px;
+}
+
+.contenedor__detail__tarjetas__informacion .contenedor_contador{
+        box-shadow: 2px 2px 6px gray;
+        margin-top: 15px;
+}
+
+.contenedor__detail__tarjetas__informacion .contenedor__detail__tarjetas__precio{
+        display: flex;
+        justify-content: center;
+        padding-left: 5px;
+        margin-top: 5px;
+        width: 150px;
+        background-color: gray;
+}
