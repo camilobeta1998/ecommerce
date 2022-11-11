@@ -19,6 +19,7 @@ body{
         padding:  35px;
         align-items: center;
         box-shadow: 2px 2px 10px gray;
+        width: 100%;
 }
 
 /*Aqui ira la clase active de los Navlinks del navbar*/
@@ -60,16 +61,20 @@ main .main__contador{
         top: 15px;
         left: 15px;
 }
-
 .footer{
-         background-color: #181818;
-        box-shadow: 0px 0px 3px 0.2px #cccccc91;
-        display: flex;
-        justify-content: space-between;
-        padding:  15px ;
-        align-items: center;
+        background-color: black;
         color: white;
-}      
+        height: 50px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+}
+
+.footer ul{
+        margin-left:5px
+}
+
+
 
 
 button{
@@ -227,3 +232,29 @@ button:hover{
         width: 150px;
         background-color: gray;
 }
+
+/*Inicio estilos formulario */
+
+.contenedor__formulario{
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.formulario{
+        display: flex;
+        flex-direction: column;
+        border: solid 2px gray;
+        padding: 10px;
+}
+
+.formulario .apellido{
+        margin-top: 10px;
+}
+
+.formulario button{
+        margin-top: 10px;
+}
+/*Fin estilos del formulario*/

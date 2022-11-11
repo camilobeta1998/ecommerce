@@ -3,8 +3,7 @@ import {Route, Routes } from 'react-router-dom'
 import Cart from '../carrito/Cart'
 import ItemListContainer from '../ItemListContainer'
 import ItemDetailContainer from './ItemDetailContainer'
-//el stock en este momento lo puse como 5 pero puedo cambiarlo
-
+import Form from '../Form/Form'
 const Main = () => {
 
   
@@ -17,6 +16,7 @@ const Main = () => {
             <Route path='/detail/:idProd' element={<ItemDetailContainer/> } />
             <Route path='/category/:categoryName' element={<ItemListContainer/>}/>
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/checkout' element={<Form/>}/>
     </Routes>
 
     </div>

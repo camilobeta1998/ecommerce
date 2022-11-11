@@ -21,8 +21,8 @@ const Navbar = ({isInHeader}) => {
                 return (
                         <nav className='footer'>
                                 <ul>
-                                        <li>Instagram</li>
-                                        <li>Facebook</li>
+                                        <li className='Instagram'>Instagram</li>
+                                        <li className='facebook'>Facebook</li>
                                 </ul>
                         </nav>
                 )   

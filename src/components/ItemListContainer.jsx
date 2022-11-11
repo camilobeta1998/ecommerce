@@ -30,7 +30,7 @@ let [products , setProducts] = useState([]);
                         promesa.then((response)=>{
 
                                 let productosFiltrados = response.filter((prod)=>{
-                                        return prod.category ===categoryName;
+                                        return prod.category === categoryName;
                                 })
                                 setProducts(productosFiltrados);
                         }).catch((error)=>{
