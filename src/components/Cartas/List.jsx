@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom';
 const List = (product) => {
           return (
-    <div className='tarjetas'>
+    <div className='tarjetas' key={product.prop.id}>
         
         <img src={product.prop.img} alt="" width='150px'/>
         <article>

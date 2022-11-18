@@ -48,9 +48,14 @@ ul a{
         display: flex;
         justify-content: center;
         align-items: center;
-        text-decoration: none;
+        
 }
 
+.carrito_de_compras .material-symbols-outlined{
+        color: black;
+        margin-right: 5px;
+
+}
 main{
         height: 75vh;
         width: 100%;
@@ -64,7 +69,7 @@ main .main__contador{
 .footer{
         background-color: black;
         color: white;
-        height: 50px;
+        height: 68px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -81,6 +86,7 @@ button{
         padding: 5px 10px;
         border-style:double;
         background-color: #D3D3D3 ;
+        border: solid 2px rgb(177, 177, 177);
 }
 
 button:hover{
@@ -207,13 +213,13 @@ button:hover{
 
 .contenedor__detail__tarjetas img{
         width: 450px;
-        height: 430px;
+        height: 480px;
         margin-left: 20px ;
         margin-top: 20px;
 }
 
 .contenedor__detail__tarjetas__informacion{
-        width: 870px;
+        width: 1000px;
         height: 430px;
         margin-left: 20px;
         margin-top: 20px;

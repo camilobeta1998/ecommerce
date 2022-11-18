@@ -1,11 +1,20 @@
 import React from 'react'
 import Contador from '../../Contador/Contador'
-
+import {useContext} from 'react'
+import {CartContext} from '../../../contexto/CartContext'
 const ItemDetail = ({product}) => { 
+
+        const {AddToCart} = useContext(CartContext)
+
+
               //Creare una funcion onAdd que llegara a prop al componente contador
          let onAdd =(cantidad) =>{
                 console.log('se agrego al carrito' , cantidad, ' ✅');
+                AddToCart(product , cantidad)
         }
+
+            
+
 
   return (
     <div className='contenedor__detail__tarjetas' key={product.id}> 
