@@ -1,19 +1,18 @@
-import React from 'react'
-import { productos } from '../../mock/productos'
-import List from './List'
+import React from "react";
+import List from "./List";
 
-const ItemList = ({products}) => {
-  return (
-    <div className='contenedor__tarjetas'>
-        {products.map((product)=>{
+const ItemList = ({ products }) => {
+    return (
+        <div className='contenedor__tarjetas'>
+            {products.map((product) => {
                 return (
-                        <div>
-                                <List prop={product} key={product.id}/>
-                        </div>
-                )
-        })}
-    </div>
-  )
-}
+                    <div key={product.id}>
+                        <List prop={product} />
+                    </div>
+                );
+            })}
+        </div>
+    );
+};
 
-export default ItemList
+export default ItemList;
