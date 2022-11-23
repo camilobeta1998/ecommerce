@@ -29,7 +29,7 @@ const ItemDetail = ({product}) => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, unde possimus repellat ut 
                 dignissimos pariatur inventore hic, deleniti excepturi corporis explicabo accusamus molestias et aliquam iure in doloremque laboriosam minus!</p>
                 <h2 className='contenedor__detail__tarjetas__precio'>Precio {product.price} $</h2>
-                 <Contador stock={4} onAdd={onAdd}/>
+                 <Contador stock={10} onAdd={onAdd}/>
         </div>
     </div>
   )
