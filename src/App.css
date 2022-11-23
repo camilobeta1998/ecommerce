@@ -29,6 +29,7 @@ body{
 
 .logo__header{
         text-decoration: none;
+        color: black;
 }
 
 ul{
@@ -42,6 +43,7 @@ ul{
 ul a{
         margin-left: 15px;
         text-decoration: none;
+        color: black;
 }
 
 .carrito_de_compras{
@@ -71,12 +73,12 @@ main .main__contador{
         color: white;
         height: 68px;
         display: flex;
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: center;
 }
 
 .footer ul{
-        margin-left:5px
+        margin-right: 15px;
 }
 
 
@@ -86,7 +88,7 @@ button{
         padding: 5px 10px;
         border-style:double;
         background-color: #D3D3D3 ;
-        border: solid 2px rgb(177, 177, 177);
+        border: solid 1px rgb(177, 177, 177);
 }
 
 button:hover{
@@ -102,7 +104,7 @@ button:hover{
         align-items: center;
         background-color: #E9E9E9;
         width: 150px;
-        height: 110px;
+        height: 135px;
         padding: 15px;
 }
 
@@ -140,6 +142,19 @@ button:hover{
 
 .contenedor__caja__padre .contenedor__boton__agregar .boton__agregar{
         width: 135px;
+}
+
+
+.boton__ir__carrito{
+        text-decoration: none;
+        color: black;
+        background-color: #D3D3D3;
+        padding: 3px 28.7px;
+        border: solid 1px rgb(177, 177, 177) ;
+}
+
+.boton__ir__carrito:hover{
+        background-color: white;
 }
 /*Fin de estilos del contador */
 
@@ -264,3 +279,15 @@ button:hover{
         margin-top: 10px;
 }
 /*Fin estilos del formulario*/
+
+
+/*Inicio estilos de la animacion de carga*/
+
+.contenedor__carga{
+        width: 99%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+/*Fin estilos de la animacion de carga*/

@@ -23,6 +23,7 @@ const Navbar = ({isInHeader}) => {
                                 <ul>
                                         <li className='Instagram'>Instagram</li>
                                         <li className='facebook'>Facebook</li>
+                                        <li className='whatsapp'>Whatsapp</li>
                                 </ul>
                         </nav>
                 )   

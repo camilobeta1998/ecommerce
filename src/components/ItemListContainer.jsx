@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import { productos } from '../mock/productos'
 import ItemList from './Cartas/ItemList';             
 import { useParams } from 'react-router-dom';
+import PulseLoader from "react-spinners/PulseLoader";
 
 
 const ItemListContainer = () => {
- 
-
-let [products , setProducts] = useState([]);
+ let [loading, setLoading] = useState(true)
+ let [products , setProducts] = useState([]);
  let {categoryName} = useParams(); 
         useEffect(()=>{
                 if(categoryName===undefined){
@@ -20,6 +20,8 @@ let [products , setProducts] = useState([]);
                                 setProducts(response);
                         }).catch((error)=>{
                                 console.log(error);
+                        }).finally(()=>{
+                                setLoading(false)
                         })
                 } else {
                          let promesa = new Promise((resolve, reject)=>{
@@ -35,10 +37,20 @@ let [products , setProducts] = useState([]);
                                 setProducts(productosFiltrados);
                         }).catch((error)=>{
                                 console.log(error);
+                        }).finally(()=>{
+                                setLoading(false)
                         })
                 }
-        }, [categoryName])
 
+                return setLoading(true)
+        }, [categoryName])
+  if(loading===true){
+        return(
+        <div className='contenedor__carga'>
+                <PulseLoader size={30}/>
+        </div>  
+        )
+  }
   return (
     <div>
     <div>
