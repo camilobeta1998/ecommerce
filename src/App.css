@@ -329,5 +329,21 @@ button:hover{
         justify-content: space-between;
 }
 
-
 /*Fin de los estilos del carrito*/
+
+/*Inicio estilos del contador del navbar*/
+
+.carrito_de_compras .contador__total__unidades{
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+}
+
+.carrito__enlace{
+        text-decoration: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+/*Fin estilos del contador del navbar*/

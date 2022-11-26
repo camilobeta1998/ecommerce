@@ -12,7 +12,7 @@ const Navbar = ({isInHeader}) => {
                                         <li><NavLink to="/category/Accesorios">Accesorios</NavLink></li>
                                         <li><NavLink to="/category/Relojes">Relojes</NavLink></li>
                                 </ul>
-                                <a href="/cart">
+                                <a href="/cart" className='carrito__enlace'>
                                         <CardWidget/>
                                 </a>
                         </nav>

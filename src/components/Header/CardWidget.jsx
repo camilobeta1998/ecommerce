@@ -7,7 +7,7 @@ const CardWidget = () => {
   return (
         <div className="carrito_de_compras">
                 <span className="material-symbols-outlined">shopping_cart</span>
-                <span>{totalUnidades()}</span>
+                <span className='contador__total__unidades'>{totalUnidades()}</span>
         </div>
   )
 }

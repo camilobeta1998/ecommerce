@@ -1,9 +1,11 @@
 import React from 'react'
-import { productos } from '../../mock/productos';
+//import { productos } from '../../mock/productos';
 import { useEffect , useState } from 'react'
 import ItemDetail from './DetallesProductos/ItemDetail';
 import {useParams} from 'react-router-dom'
 import PulseLoader from "react-spinners/PulseLoader";
+import { collectionProd } from '../../services/firebaseConfig';
+import { getDoc , doc } from 'firebase/firestore';
 
 
 
@@ -13,7 +15,21 @@ const ItemDetailContainer = () => {
         let {idProd} = useParams();
 
         useEffect(()=>{
-                let promise = new Promise((resolve, rejected)=>{
+                const ref = doc(collectionProd, idProd);
+                getDoc(ref)
+                .then((res)=>{
+                        setProduct({
+                                id: res.id,
+                                ...res.data()
+                        })
+                })
+                .catch((error)=>{
+                        console.log(error)
+                })
+                .finally(()=>{
+                        setLoading(false)
+                })
+               /*  let promise = new Promise((resolve, rejected)=>{
 
                         setTimeout(() => {
                                resolve(productos) 
@@ -28,7 +44,7 @@ const ItemDetailContainer = () => {
                         console.log(error)
                 }).finally(()=>{  //Cuando la promesa finalice el estado setLoading quedara de nuevo false, el finally siempre se va a ejecutar
                         setLoading(false)
-                })
+                }) */
         } , [idProd])
 
         if (loading===true) {
