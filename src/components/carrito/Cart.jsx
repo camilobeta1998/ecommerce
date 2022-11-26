@@ -12,22 +12,26 @@ const Cart = () => {
                 )
         }
   return (
-    <div>
+    <div className='contenedor__carrito__mayor'>
         {
                 cart.map((prod)=>(
-                        <div key={prod.id}>
-                                <img src={prod.img} alt={prod.title} />
-                                <div>
-                                        <h3>{prod.title}</h3>
-                                        <h3>Cantidad : {prod.cantidad}</h3>
-                                        <button onClick={()=>deleteOne(prod.id)}>Eliminar</button>
+                        <div key={prod.id} className='contenedor__carrito'>
+                                <div className='contenedor__carrito__imagen'>
+                                        <img src={prod.img} alt={prod.title} className='contenedor__carrito__imagen'/>
                                 </div>
+                                        <div>
+                                                <h3>{prod.title}</h3>
+                                                <h3>Cantidad : {prod.cantidad}</h3>
+                                                <h2>Total: {totalPrecio()} $</h2>
+                                                <div className='contenedor__carrito__botones'>
+                                                        <button onClick={deleteAll}>Vaciar Carrito</button>
+                                                        <button onClick={()=>deleteOne(prod.id)}>Eliminar</button>
+                                                </div>
+                                        </div>
                         </div>
                 
                 ))
         }
-        <h2>Total: {totalPrecio()} $</h2>
-        <button onClick={deleteAll}>Vaciar Carrito</button>
     </div>
   )
 }
