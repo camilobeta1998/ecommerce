@@ -271,7 +271,7 @@ button:hover{
         padding: 10px;
 }
 
-.formulario .apellido{
+.formulario input{
         margin-top: 10px;
 }
 
@@ -292,12 +292,12 @@ button:hover{
 }
 /*Fin estilos de la animacion de carga*/
 
+/*Inicio estilos del carrito*/
 
 .contenedor__carrito img{
         width: 200px;
-        height: 150px;
+        height: 210px;
 }
-/*Inicio estilos del carrito*/
 
 .contenedor__carrito__mayor{
         width: 98%;
@@ -311,13 +311,33 @@ button:hover{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 95%;
+}
 
+.especificaciones{
+        margin-bottom: 20px;
+}
+
+.contenedor__carrito .checkout{
+        text-decoration: none;
+        color: black;
+        background-color :#D3D3D3;
+        border: solid 1px rgb(158, 158, 158);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        padding-left: 15px;
+        padding-right: 15px;
+}
+.contenedor__carrito .checkout:hover{
+        background-color: white;
 }
 
 .contenedor__carrito{
         background-color: #e8e8e8;
-        width: 250px;
-        height: 290px;
+        width: 290px;
+        height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

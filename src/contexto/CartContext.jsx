@@ -75,7 +75,6 @@ const CartProvider = (props) =>{
 
  
 
-       console.log(cart)
 
         return(
                 <CartContext.Provider value={{cart , AddToCart, deleteAll , deleteOne , totalUnidades , totalPrecio}}>

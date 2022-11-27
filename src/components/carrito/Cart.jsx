@@ -26,6 +26,7 @@ const Cart = () => {
                                                 <div className='contenedor__carrito__botones'>
                                                         <button onClick={deleteAll}>Vaciar Carrito</button>
                                                         <button onClick={()=>deleteOne(prod.id)}>Eliminar</button>
+                                                        <Link to='/checkout' className='checkout'>Checkout</Link>
                                                 </div>
                                         </div>
                         </div>
